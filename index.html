@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chengzhi Yuan's research atlas on AI for formal mathematics, tools, shared state, and evidence.">
+  <meta name="description" content="Chengzhi Yuan's research atlas on AI for formal mathematics, multi-agent systems, tools, shared state, and evidence.">
   <meta property="og:title" content="Chengzhi Yuan · Research Atlas">
   <meta property="og:description" content="AI4Math, formal mathematics, and multi-agent systems for long-horizon mathematical work.">
   <meta property="og:type" content="website">
@@ -23,6 +23,7 @@
         <a href="#map">Map</a>
         <a href="#work">Work</a>
         <a href="#questions">Questions</a>
+        <a href="#horizon">Horizon</a>
         <a href="#about">About</a>
         <a class="nav-external" href="https://github.com/yuan-chengzhi" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
@@ -34,8 +35,8 @@
       <div class="hero-copy">
         <p class="eyebrow">Mathematics · Artificial Intelligence · AI4Math</p>
         <h1 id="hero-title">Chengzhi Yuan <span class="cn-name">袁诚志</span></h1>
-        <p class="hero-lede">I study how AI systems carry mathematical work across long horizons—through formal proof, tools, shared state, and evidence.</p>
-        <p class="hero-body">My work began with a practical question: how can an agent make reliable progress on a difficult mathematical problem? As the tasks became longer and more dependent, the question became broader: what must a research environment preserve so that partial work can be checked, handed off, and continued?</p>
+        <p class="hero-lede">I study how AI systems can organize, verify, preserve, and continue complex mathematical work across long horizons—starting with formal proof, tools, shared state, and evidence.</p>
+        <p class="hero-body">My work began with a practical question: how can an agent make reliable progress on a difficult mathematical problem? As the tasks became longer and more dependent, the question became broader: what must a research environment preserve so that partial work can be checked, handed off, and continued? Formal mathematics is my current setting; the broader question concerns how tools, evidence, and organizations should change as the work scales.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#map">Explore the research map <span aria-hidden="true">↓</span></a>
           <a class="button button-secondary" href="https://github.com/yuan-chengzhi" target="_blank" rel="noreferrer">Open GitHub <span aria-hidden="true">↗</span></a>
@@ -227,15 +228,51 @@
         <div class="question-list">
           <article class="question-card"><span class="question-index">01</span><h3>Unfinished work</h3><p>How should a system represent mathematical work that is useful before it becomes a finished proof?</p></article>
           <article class="question-card"><span class="question-index">02</span><h3>Handoffs</h3><p>What must be preserved so that a later agent can verify and continue an earlier attempt?</p></article>
-          <article class="question-card"><span class="question-index">03</span><h3>Evidence</h3><p>Which observations support a claim about progress, failure, or improvement—and which claims remain tentative?</p></article>
+          <article class="question-card"><span class="question-index">03</span><h3>Scaling evidence</h3><p>Under what evidence do more agents, more computation, and more experience produce global capability rather than more activity?</p></article>
         </div>
+      </div>
+    </section>
+
+    <section id="horizon" class="section horizon-section" aria-labelledby="horizon-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 · Research horizon</p>
+            <h2 id="horizon-title">What may change when the work scales</h2>
+          </div>
+          <p class="section-intro">The projects above are the evidence I have so far. The directions below are hypotheses and open questions, not completed systems or predictions I want to treat as facts.</p>
+        </div>
+        <div id="horizon-grid" class="horizon-grid">
+          <article class="horizon-card" id="horizon-math">
+            <div class="horizon-kicker">AI4Math · open hypothesis</div>
+            <h3>From proof generation to mathematical ecosystems</h3>
+            <p class="horizon-question">When proofs become cheap to produce, who—or what—decides which work should be verified, understood, reused, or pursued?</p>
+            <p>As formal proof production becomes more abundant, correctness remains necessary but may no longer be the hardest bottleneck. Mathematical context, understanding, value, transfer, and reuse may become equally important.</p>
+            <div class="horizon-tags"><span>verification</span><span>understanding</span><span>value</span></div>
+          </article>
+          <article class="horizon-card" id="horizon-mas">
+            <div class="horizon-kicker">Multi-agent systems · open hypothesis</div>
+            <h3>From agent coordination to evolving organizations</h3>
+            <p class="horizon-question">When many agents share a difficult task, how can the system discover and revise its communities, routes, protocols, and resource allocation?</p>
+            <p>As the number of agents grows, the central problem may move beyond assigning tasks. Organization, information flow, communication, and the division between local and global decisions may themselves become objects of experiment.</p>
+            <div class="horizon-tags"><span>organization</span><span>information flow</span><span>coordination</span></div>
+          </article>
+          <article class="horizon-card" id="horizon-bridge">
+            <div class="horizon-kicker">Common problem · working direction</div>
+            <h3>Scaling evidence and state</h3>
+            <p class="horizon-question">How can a system preserve enough structure, provenance, and feedback for work to remain checkable and useful as tasks, agents, and artifacts multiply?</p>
+            <p>This is the bridge between the two horizons and the projects already recorded here: local reasoning only becomes cumulative when a system can retain, evaluate, and organize what happened.</p>
+            <div class="horizon-tags"><span>state</span><span>evidence</span><span>system evolution</span></div>
+          </article>
+        </div>
+        <div class="horizon-note"><span class="signal-dot" aria-hidden="true"></span><span>These directions are intentionally open. The concrete system and application areas may change as new experiments provide better evidence.</span></div>
       </div>
     </section>
 
     <section id="about" class="section about-section" aria-labelledby="about-title">
       <div class="shell about-grid">
         <div>
-          <p class="eyebrow">04 · About</p>
+          <p class="eyebrow">05 · About</p>
           <h2 id="about-title">A research notebook that stays open</h2>
         </div>
         <div class="about-copy">
