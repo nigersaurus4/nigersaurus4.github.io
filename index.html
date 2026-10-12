@@ -109,7 +109,13 @@
           </div>
         </div>
       </div>
-      <div id="map-list" class="map-list" aria-label="Text version of the research map"></div>
+      <div id="map-list" class="map-list" aria-label="Text version of the research map">
+        <a class="map-list-item" href="#project-putnam"><i class="legend-dot rust"></i><span><strong>Putnam 2025</strong><br>early formal-first agent experiment</span></a>
+        <a class="map-list-item" href="#project-tools"><i class="legend-dot blue"></i><span><strong>Tools &amp; feedback</strong><br>proof state, prompts, execution, and feedback</span></a>
+        <a class="map-list-item" href="#project-flt"><i class="legend-dot teal"></i><span><strong>ContextSwarm / FLT</strong><br>collaborative long-horizon formalization</span></a>
+        <a class="map-list-item" href="#project-traces"><i class="legend-dot navy"></i><span><strong>Trace &amp; evidence</strong><br>analysis branch of the FLT campaign</span></a>
+        <a class="map-list-item" href="#project-horizon"><i class="legend-dot outline"></i><span><strong>Living environment</strong><br>working direction for future experiments</span></a>
+      </div>
     </section>
 
     <section id="work" class="section section-tint" aria-labelledby="work-title">
@@ -121,7 +127,93 @@
           </div>
           <p class="section-intro">The cards separate the shared project from my role in it, and public evidence from interpretation. They are designed to grow as new experiments become worth keeping.</p>
         </div>
-        <div id="project-grid" class="project-grid" aria-live="polite"></div>
+        <div id="project-grid" class="project-grid" aria-live="polite">
+        <article class="project-card" id="project-putnam">
+          <div class="project-top">
+            <span class="project-type">Formal-first experiment</span>
+            <span class="project-status"><i class="status-dot rust"></i>Internal record</span>
+          </div>
+          <h3>Putnam 2025</h3>
+          <p class="project-period">2025 · early experiment</p>
+          <div class="project-label">Question</div>
+          <p>How can tools, structured feedback, and an execution loop help an agent make reliable progress on a difficult mathematical task?</p>
+          <div class="project-label">My contribution</div>
+          <p class="project-contribution">I worked on the Pi Math First / Pi Lean Tools environment, prompt design, and the Ralph-style execution loop, then examined what the runs suggested about the next useful system improvements.</p>
+          <div class="project-evidence">
+            <div class="project-label">Evidence &amp; boundary</div>
+            <p><strong>Internal experiment note.</strong> Twelve problems were run with eight parallel attempts per problem; one full run took about 5.5 hours, and all twelve reached the apparatus-defined internal `final_verified` state. This is not an official Putnam score or a claim about general mathematical ability.</p>
+          </div>
+          <div class="project-foot"><span>starting point</span><span>public summary</span></div>
+        </article>
+        <article class="project-card" id="project-tools">
+          <div class="project-top">
+            <span class="project-type">Methodological thread</span>
+            <span class="project-status"><i class="status-dot blue"></i>Ongoing question</span>
+          </div>
+          <h3>Tools, feedback, and proof state</h3>
+          <p class="project-period">2025–2026 · recurring thread</p>
+          <div class="project-label">Question</div>
+          <p>What information and feedback make a partial mathematical attempt useful to the next attempt?</p>
+          <div class="project-label">My contribution</div>
+          <p class="project-contribution">Across the formalization work, I focused on improving structured proof-state tools (ProofState) and a shared information base (CPS), prompts, experiment execution, and the way failures and bottlenecks were summarized for the next round.</p>
+          <div class="project-evidence">
+            <div class="project-label">Evidence &amp; boundary</div>
+            <p><strong>Cross-project observation.</strong> The thread links the early single-task experiment to the longer formalization campaign; it records a research question rather than a finished framework.</p>
+          </div>
+          <div class="project-foot"><span>connective thread</span><span>working record</span></div>
+        </article>
+        <article class="project-card" id="project-flt">
+          <div class="project-top">
+            <span class="project-type">Collaborative formalization</span>
+            <span class="project-status"><i class="status-dot teal"></i>Collaborative · unfinished</span>
+          </div>
+          <h3>ContextSwarm / FLT</h3>
+          <p class="project-period">2026 · unfinished campaign</p>
+          <div class="project-label">Question</div>
+          <p>How can multiple agents contribute to a long, dependency-heavy formal proof when no single attempt can cover the whole task?</p>
+          <div class="project-label">My contribution</div>
+          <p class="project-contribution">Within the collaborative ContextSwarm project, I worked on structured proof-state tools (ProofState) and a shared information base (CPS), prompt and run improvements, FLTBench issue fixes, and summaries of mathematical progress and system bottlenecks.</p>
+          <div class="project-evidence">
+            <div class="project-label">Evidence &amp; boundary</div>
+            <p><strong>Shared project record.</strong> The overall formalization remained unfinished. This card describes my contributions inside the collaboration; it does not claim ownership of the whole system.</p>
+          </div>
+          <div class="project-foot"><span>long-horizon branch</span><span>publicly described</span></div>
+        </article>
+        <article class="project-card" id="project-traces">
+          <div class="project-top">
+            <span class="project-type">Analysis branch</span>
+            <span class="project-status"><i class="status-dot navy"></i>Evidence analysis</span>
+          </div>
+          <h3>Trace &amp; evidence</h3>
+          <p class="project-period">2026 · same FLT campaign</p>
+          <div class="project-label">Question</div>
+          <p>What can execution traces tell us about proof progress, failure, and the information needed for continuation?</p>
+          <div class="project-label">My contribution</div>
+          <p class="project-contribution">I organized and analyzed experiment traces and data, studied the relations among structured proof state, shared information records, feedback, and shared state, and contributed figures, proof reading, and manuscript revisions.</p>
+          <div class="project-evidence">
+            <div class="project-label">Evidence &amp; boundary</div>
+            <p><strong>Analytical record.</strong> The branch turns one large campaign into inspectable observations and limitations. It is presented here without exposing private or double-blind manuscript details.</p>
+          </div>
+          <div class="project-foot"><span>analysis of FLT</span><span>public boundary</span></div>
+        </article>
+        <article class="project-card" id="project-horizon">
+          <div class="project-top">
+            <span class="project-type">Working direction</span>
+            <span class="project-status"><i class="status-dot blue"></i>To be tested</span>
+          </div>
+          <h3>A living research environment</h3>
+          <p class="project-period">Future-facing · open</p>
+          <div class="project-label">Question</div>
+          <p>How should a research environment evolve its representations, links, protocols, and challenges from evidence gathered during real mathematical work?</p>
+          <div class="project-label">My contribution</div>
+          <p class="project-contribution">I am using the earlier projects to formulate this direction: keep the research questions explicit, let experiments test the system, and leave room for the eventual structure to change.</p>
+          <div class="project-evidence">
+            <div class="project-label">Evidence &amp; boundary</div>
+            <p><strong>Research plan.</strong> This is a direction, not a completed system or a public repository. The site will update it only when new experiments make the next claim supportable.</p>
+          </div>
+          <div class="project-foot"><span>open horizon</span><span>future work</span></div>
+        </article>
+        </div>
       </div>
     </section>
 
