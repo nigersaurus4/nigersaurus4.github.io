@@ -34,7 +34,6 @@
   Promise.all([fetch('data/projects.json?v=2', {cache: 'no-store'}).then((response) => response.json()), fetch('data/research-map.json?v=2', {cache: 'no-store'}).then((response) => response.json())])
     .then(([projects, map]) => { renderProjects(projects); renderMapList(map.nodes); })
     .catch(() => {
-      projectGrid.innerHTML = '<p class="section-intro">The project index is temporarily unavailable. The map above still gives the current structure.</p>';
-      mapList.innerHTML = '';
+      // Keep the semantic HTML fallback already present in index.html.
     });
 })();
